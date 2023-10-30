@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.popup-content {
+  background-color: black;
+  margin: 20% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#openPopupButton {
+  align-items: center;
+  border: 4px solid transparent;
+  border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border-image-slice: 1 ;
+  border-width: 8px ;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 1vw;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 800px;
+  width: 18vw  ;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  margin: 20px auto ;
+}
+
+#openPopupButton:active,
+#openPopupButton:hover {
+  outline: 0;
+}
+
+#openPopupButton {
+  text-align: center ;
+  background-color: rgb(5, 6, 45);
+  padding: 16px 30px 16px 24px ;
+  border-radius: 9px;
+  width: 16vw;
+  height: 100%;
+  transition: 300ms;
+}
+
+#openPopupButton:hover {
+  
+  background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+
+#openPopupButton {
+    font-size: 2vw;
+    width: 21vw;
+  }
+
+
+
+
+body {
+    margin: 0;
+    background-image: url("bkg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none ;
+  }
+  .ALL {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1 ;
+  }
+
+
+  .player {
+    text-shadow: 2px 3px 3px #0747f5, 9px 8px 0px rgba(0,0,0,0.15);
+  }
+  
+  
+  .chooseth {
+    text-shadow: 2px 2px 3px black, 4px 4px 3px rgba(0,0,0,0.15),6px 6px 3px rgba(0,0,0,0.15);
+    font-weight: bold;
+  }
+
+
+  .computer {
+    text-shadow: 2px 3px 3px #0747f5, 9px 8px 0px rgba(0,0,0,0.15);
+  }
+
+
+  .Title:hover { 
+    font-size: 6vw;
+    text-shadow: 2px 3px 3px #0747f5, 9px 8px 0px rgba(0,0,0,0.15);
+    transition: 300ms;
+  }
+
+  .Title{ 
+    font-size: 5vw;
+    text-shadow: 2px 3px 3px #0747f5, 9px 8px 0px rgba(0,0,0,0.15);
+
+
+  }
+
+
+
+
+  .button-all {
+display: flex;
+flex-wrap: wrap;
+gap: 4;
+margin: 11px 3px;
+text-align: center ;
+
+  }
+  
+  .chooseth { font-size: 2vw;
+    
+
+
+
+
+  }
+  
+  img {
+    margin: 0;
+    padding: 0;
+    width: 18vw ;
+    max-width: 1000px;
+    height: 160vh;
+    max-height: 2000px;
+  }
+  
+  .GAME {
+    background: linear-gradient(to top, #c31432, #240b36);
+    width: 100%;
+    text-align: center;
+    color: red;
+  }
+  
+  .input-all {
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+  }
+  
+  .choose1st,
+  #choose2nd {
+    caret-color: red;
+    caret-shape: block;
+    text-align: center ;
+    width: 50vw;
+    max-height: 10vw;
+    height: 8vw;
+    max-width: 840px;
+    font-size: 5vw;
+    margin: 5px auto;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to left, #3a6186, #89253e);
+    border-image-slice: 1 ;
+    border-width: 8px ;
+   background-image:  linear-gradient(to left, #3a6186, #89253e);
+   font-family: 'Bungee Spice', cursive;
+  }
+
+  
+  .choose1st:hover ,
+  #choose2nd:hover {
+
+ background-image: none ;
+ border-image: linear-gradient(to right, #8360c3, #2ebf91);
+ border-image-slice: 1 ;
+    border-width: 8px ;
+    transition: 1000ms;
+  } 
+
+  .choose1st::placeholder,
+  #choose2nd::placeholder {
+    font-size: 3.8vw;
+    text-align: center;
+  }
+  
+
+  .buttons { display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+
+
+
+  }
+
+
+  #button-19 {
+    appearance: button;
+    background-color: #1899d6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 3vw;
+    font-weight:bold ;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 13px auto;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: rgba(59, 46, 240, 0.4) -5px 5px, rgba(59, 46, 240, 0.3) -10px 10px, rgba(59, 46, 240, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px,rgba(59, 46, 240, 0.4) 5px 5px, rgba(59, 46, 240, 0.3) 10px 10px,  rgba(59, 46, 240, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    width: 17vw;
+    max-width: 250px;
+    height: 7vh;
+  }
+  
+  #button-19:after {
+    background-clip: padding-box;
+    background-color: #1cb0f6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -3px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  #button-19:main,
+  #button-19:focus {
+    user-select: auto;
+  }
+  
+  #button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  #button-19:disabled {
+    cursor: auto;
+  }
+  
+  #button-19:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+  
+  #button-20 {
+    appearance: button;
+    background-color: #1899d6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 5px auto;
+    outline: none;
+    overflow: visible;
+    padding: 13px 20px 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    box-shadow: rgba(59, 46, 240, 0.4) 0px 5px, rgba(59, 46, 240, 0.3) 0px 10px, rgba(59, 46, 240, 0.2) -0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    white-space: nowrap;
+    width: 17vw;
+    max-width: 250px;
+    height: 8vh;
+  }
+  
+  #button-20:after {
+    background-clip: padding-box;
+    background-color: #1cb0f6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -3px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  #button-20:main,
+  #button-20:focus {
+    user-select: auto;
+  }
+  
+  #button-20:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  #button-20:disabled {
+    cursor: auto;
+  }
+  
+  #button-20:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+  
+  .player,
+  .computer {
+    font-size: 3vw;
+  }
+  
+  h1 {
+    font-size: 3vw ;
+    margin-bottom: 1px ;
+  }
+
+  :root{ --main-color : #FDA400; }
+.demo{ background-color: #eee; }
+.counter{
+    color: var(--main-color);
+    font-family: 'Alegreya Sans', sans-serif;
+    width: 20vw;
+    padding: 20px 10px 50px;
+    margin: 2px auto;
+    position: relative;
+    z-index: 1;
+}
+.counter .counter-icon{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+    width: 55px;
+    margin: 0 0 10px;
+}
+
+.counter .counter-content{
+    background-color: darkgreen;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 15px;
+    box-shadow: rgba(59, 46, 240, 0.4) -5px 5px, rgba(59, 46, 240, 0.3) -10px 10px, rgba(59, 46, 240, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.counter .computer-content{
+    background-color: black;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 15px;
+    box-shadow: rgba(59, 46, 240, 0.4) 5px 5px, rgba(59, 46, 240, 0.3) 10px 10px,  rgba(59, 46, 240, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    color: red ;
+}
+.counter h3{
+    font-size: 2.4vw;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+.counter .player-points{
+    font-size: 2.4vw;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 0 2px;
+    display: block;
+}
+.counter .computer-points{
+    font-size: 2.4vw;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 0 4px;
+    display: block;
+  color: red ;
+}
+
+.counter h3:hover{
+  font-size: 2.8vw;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0;
+  transition: 300ms;
+}
+.counter .player-points:hover{
+  font-size: 3vw;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0 0 2px;
+  display: block;
+  transition: 300ms;
+}
+.counter .computer-points:hover{
+  font-size: 3vw;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0 0 4px;
+  display: block;
+color: red ;
+transition: 300ms;
+}
+
+.POINTS {
+display:flex;
+flex-wrap: wrap;
+}
+
+#rockButton:hover ,#rockButtonC:hover {
+  font-size: 3.5vw;
+  width: 18vw;
+  max-width: 260px ;
+  height: 8vh ;
+  transition: 300ms;
+
+
+}
+
+
+#rockButton ,#rockButtonC  {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #fddd29;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 3vw;
+ font-weight:bold ;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 5px auto;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 14.5vw;
+  max-width: 200px ;
+}
+
+#rockButton:after 
+,#rockButtonC:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#rockButton:main,
+#rockButton:focus {
+  user-select: auto;
+}
+
+#rockButtonC:main,
+#rockButtonC:focus {
+  user-select: auto;
+}
+
+#rockButton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#rockButtonC:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#rockButton:disabled {
+  cursor: auto;
+}
+
+#rockButton:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+#rockButtonC:disabled {
+  cursor: auto;
+}
+
+#rockButtonC:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+#scissorsButton:hover , #scissorsButtonC:hover {
+  font-size: 3.5vw;
+  width: 23vw;
+  max-width: 340px ;
+  height: 8vh ;
+  transition: 300ms;
+
+
+}
+
+
+#scissorsButton {
+  appearance: button;
+  background-color: #FF5733; /* Set the desired background color for the SCISSORS button */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 3vw;
+ font-weight:bold ;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 5px auto;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 20vw;
+  max-width: 290px ;
+  height: 7vh ;
+}
+
+#scissorsButton:after {
+  background-clip: padding-box;
+  background-color: #FF3600; /* Set the desired background color for the :after pseudo-element */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#scissorsButton:main,
+#scissorsButton:focus {
+  user-select: auto;
+}
+
+#scissorsButton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#scissorsButton:disabled {
+  cursor: auto;
+}
+
+#scissorsButton:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+
+#scissorsButton:after {
+  background-clip: padding-box;
+  background-color: #FF3600; /* Set the desired background color for the :after pseudo-element */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#scissorsButton:main,
+#scissorsButton:focus {
+  user-select: auto;
+}
+
+#scissorsButton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#scissorsButton:disabled {
+  cursor: auto;
+}
+
+#scissorsButton:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+#scissorsButtonC {
+  appearance: button;
+  background-color: #FF5733; /* Set the desired background color for the SCISSORS button */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 2vw;
+ font-weight:bold ;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 5px auto;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 15vw;
+  max-width: 210px ;
+}
+
+#scissorsButtonC:after {
+  background-clip: padding-box;
+  background-color: #FF3600; /* Set the desired background color for the :after pseudo-element */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#scissorsButtonC:main,
+#scissorsButtonC:focus {
+  user-select: auto;
+}
+
+#scissorsButtonC:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#scissorsButtonC:disabled {
+  cursor: auto;
+}
+
+#scissorsButtonC:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+
+
+#paperButton:hover ,#paperButtonC:hover {
+  font-size: 3.5vw;
+  width: 18vw;
+  max-width: 260px ;
+  height: 7vh ;
+  transition: 300ms;
+
+
+}
+
+
+#paperButtonC {
+  appearance: button;
+  background-color: #FFC107; /* Set the desired background color for the PAPER button */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: Green ;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 2vw;
+ font-weight: bold ;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 5px auto;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 13vw;
+  max-width: 160px ;
+}
+
+#paperButtonC:after {
+  background-clip: padding-box;
+  background-color: #FFA000; /* Set the desired background color for the :after pseudo-element */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#paperButtonC:main,
+#paperButtonC:focus {
+  user-select: auto;
+}
+
+#paperButtonC:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#paperButtonC:disabled {
+  cursor: auto;
+}
+
+#paperButtonC:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+#paperButton {
+  appearance: button;
+  background-color: #FFC107; /* Set the desired background color for the PAPER button */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: black ;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 2.7vw;
+ font-weight:bold ;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 5px auto;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 15.vw;
+  max-width: 210px ;
+}
+
+#paperButton:after {
+  background-clip: padding-box;
+  background-color: #FFA000; /* Set the desired background color for the :after pseudo-element */
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#paperButton:main,
+#paperButton:focus {
+  user-select: auto;
+}
+
+#paperButton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#paperButton:disabled {
+  cursor: auto;
+}
+
+#paperButton:active {
+  border-width: 4px 0 0;
+  background: none;
+}
