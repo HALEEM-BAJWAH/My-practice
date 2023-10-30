@@ -27,7 +27,7 @@ playButton.addEventListener('click', function() {
 
   let computerChoice = choose2ndInput.value.toLowerCase()
 
-  if (playerChoice === computerChoice) {
+  if (playerChoice === computerChoice || playerChoice === "") {
   } 
   else if (
 
